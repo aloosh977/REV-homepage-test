@@ -9,9 +9,9 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(10,minmax(4vw,50px));
-    grid-template-rows: repeat(10,minmax(4vw,50px));
-    gap: minmax(0.5vw,10px);
+    grid-template-columns: repeat(10,4vw);
+    grid-template-rows: repeat(10,4vw);
+    gap: 0.1vw;
     transform: rotate(45deg);
 }
 .brandName{
