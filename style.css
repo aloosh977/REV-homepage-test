@@ -9,9 +9,9 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(10,4vw);
-    grid-template-rows: repeat(10,4vw);
-    gap: 0.1vw;
+    grid-template-columns: repeat(10,50px);
+    grid-template-rows: repeat(10,50px);
+    gap: 5px;
     transform: rotate(45deg);
 }
 .brandName{
@@ -30,8 +30,8 @@ body{
     font-size: 6rem;
 }
 .square{
-    width: 3em;
-    height: 3em;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
     background-color: #FF66CC;
 }
