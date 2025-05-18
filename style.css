@@ -11,13 +11,13 @@ body{
     display: grid;
     grid-template-columns: repeat(10,50px);
     grid-template-rows: repeat(10,50px);
-    gap: 5px;
+    gap: 10px;
     transform: rotate(45deg);
 }
 .brandName{
     color: #FFFFFF;
     text-shadow: 0.19rem 0.19rem 0.38rem rgba(0, 0, 0, 0.6);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(65, 17, 55, 0.5); /* Semi-transparent black */
     padding: 10px;
     border-radius: 5px;
     z-index: 10;
@@ -29,9 +29,17 @@ body{
     transform: translate(-50%,-100%) rotate(-45deg);
     font-size: 6rem;
 }
+
+@keyframes fadeEffect {
+    0% {box-shadow: 0 0 0 rgba(255, 102, 204, 0);transform: rotate(0deg) scale(100%);}
+    50%{box-shadow: 0 0 10px rgba(255, 102, 204, 1);transform: rotate(90deg) scale(75%);}
+    100% {box-shadow: 0 0 0 rgba(255, 102, 204, 0);transform: rotate(0deg) scale(100%);}
+}
+
 .square{
     width: 50px;
     height: 50px;
     border-radius: 5px;
     background-color: #FF66CC;
+    animation: fadeEffect 2s infinite ;
 }
