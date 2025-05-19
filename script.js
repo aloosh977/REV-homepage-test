@@ -19,5 +19,5 @@ const squares=document.querySelectorAll(".square");
 
 for(let i=0;i<squares.length;i++){
     const delayEffect= Math.random()*3;
-    squares[i].style.animationDelay=`${delayEffect}s`
+    squares[i].style.animationDelay=`${delayEffect}s`;
 }
