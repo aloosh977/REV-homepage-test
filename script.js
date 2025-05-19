@@ -7,15 +7,7 @@ for(let i=0;i<100;i++){
 
 const squares=document.querySelectorAll(".square");
 
-// function randomFadeEffect(){
-//     for(let i=0;i<40;i++){
-//         const randomIndex= Math.floor(Math.random()*squares.length);
-//         const randomSquare=squares[randomIndex];
-//         randomSquare.style.animation="fadeEffect 2s ease-in-out";
 
-//     }
-// }
-// setInterval(randomFadeEffect,500)
 
 for(let i=0;i<squares.length;i++){
     const delayEffect= Math.random()*3;
