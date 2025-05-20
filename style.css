@@ -1,33 +1,36 @@
-body{
-    background-color: #4B004B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 100vh;
-    margin: 0px;
+html {
+  overflow-x: hidden;
 }
-.container{
-    display: grid;
-    grid-template-columns: repeat(10,50px);
-    grid-template-rows: repeat(10,50px);
-    gap: 10px;
-    transform: rotate(45deg);
+body {
+  background-color: #4b004b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0px;
 }
-.brandName{
-    color: #FFFFFF;
-    text-shadow: 0.19rem 0.19rem 0.38rem rgba(0, 0, 0, 0.6);
-    background-color: rgba(65, 17, 55, 0.5); /* Semi-transparent black */
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 10;
-    text-align: center;
-    position: absolute;
-    font-weight: bold;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-100%) rotate(-45deg);
-    font-size: 6rem;
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 10px;
+  transform: rotate(45deg);
+}
+.brandName {
+  color: #ffffff;
+  text-shadow: 0.19rem 0.19rem 0.38rem rgba(0, 0, 0, 0.6);
+  background-color: rgba(65, 17, 55, 0.5); /* Semi-transparent black */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+  text-align: center;
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%) rotate(-45deg);
+  font-size: 6rem;
 }
 
 /* @keyframes glowEffect {
@@ -37,15 +40,21 @@ body{
 } */
 
 @keyframes fadeEffect {
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.square{
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #FF66CC;
-    animation: fadeEffect 2s infinite ; 
+.square {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ff66cc;
+  animation: fadeEffect 2s infinite;
 }
